@@ -2,7 +2,7 @@ package ch16;
 
 public class Employee {
 
-    public static int serialNum = 1000;
+    private static int serialNum = 1000;
 
     private int employeeId;
     private String employeeName;
@@ -13,12 +13,10 @@ public class Employee {
         employeeId = serialNum;
     }
 
-    public int getEmployeeId() {
-        return employeeId;
-    }
+    public static int getSerialNum() {
+        int i = 0;
 
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
+        return serialNum;
     }
 
     public String getEmployeeName() {
@@ -35,5 +33,9 @@ public class Employee {
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    public int getEmployeeId() {
+        return employeeId;
     }
 }
