@@ -1,6 +1,6 @@
 package ch02;
 
-public class VIPCustomer extends Customer{
+public class VIPCustomer extends Customer {
 
     double saleseRatio;
     String agentID;
