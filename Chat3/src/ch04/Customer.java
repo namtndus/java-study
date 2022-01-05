@@ -1,6 +1,4 @@
-package ch03;
-
-import java.util.DoubleSummaryStatistics;
+package ch04;
 
 public class Customer {
 
@@ -23,8 +21,6 @@ public class Customer {
 
         customerGrade = "SILVER";
         bonusdRatio = 0.01;
-
-        System.out.println("Customer(int, String) 호출.");
 
     }
 

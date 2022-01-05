@@ -1,6 +1,6 @@
-package ch03;
+package ch04;
 
-public class VIPCustomer extends Customer{
+public class VIPCustomer extends Customer {
 
     double saleseRatio;
     String agentID;
@@ -20,7 +20,13 @@ public class VIPCustomer extends Customer{
         bonusdRatio = 0.05;
         saleseRatio = 0.1;
         customerGrade = "VIP";
-        System.out.println("VIPCustomer(int, String) 호출.");
+    }
+
+    @Override
+    public int calcPrice(int price) {
+        bonusPoint += price *bonusdRatio;
+        price -= (int) price * saleseRatio;
+        return price;
     }
 
     public String getAgentID(){
